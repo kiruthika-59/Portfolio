@@ -1,0 +1,187 @@
+:root {
+	font-family:
+		Inter,
+		system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		sans-serif;
+
+	color: #1f2937;
+
+	background:
+		linear-gradient(
+			to bottom,
+			#f8fafc,
+			#eef2ff
+		);
+
+	line-height: 1.6;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+
+	-webkit-font-smoothing:
+		antialiased;
+
+	-moz-osx-font-smoothing:
+		grayscale;
+
+	--primary: #4338ca;
+	--text-primary: #111827;
+	--text-secondary: #64748b;
+	--border:
+		rgba(
+			229,
+			231,
+			235,
+			0.8
+		);
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 90px;
+
+	overflow-x: hidden;
+}
+
+body {
+	min-height: 100vh;
+
+	font-family: inherit;
+	color: var(--text-primary);
+
+	background:
+		linear-gradient(
+			to bottom,
+			#f8fafc,
+			#eef2ff
+		);
+
+	overflow-x: hidden;
+}
+
+
+::selection {
+	background:
+		rgba(
+			67,
+			56,
+			202,
+			0.18
+		);
+
+	color: #111827;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+
+section {
+	position: relative;
+
+	scroll-margin-top: 90px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--text-primary);
+	line-height: 1.2;
+}
+
+p {
+	line-height: 1.8;
+	color: var(--text-secondary);
+}
+
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+
+button {
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+
+
+html::-webkit-scrollbar {
+	width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+	background:
+		rgba(
+			99,
+			102,
+			241,
+			0.35
+		);
+
+	border-radius: 999px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+	background:
+		rgba(
+			99,
+			102,
+			241,
+			0.55
+		);
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+	html {
+		scroll-padding-top: 80px;
+	}
+
+	section {
+	position: relative;
+	scroll-margin-top: 90px;
+}
+}
+@media (max-width: 480px) {
+	body {
+		font-size: 15px;
+	}
+}
