@@ -72,10 +72,12 @@
 			</div>
 
 			<p class="learning">
+            <span class="inline-icon">
 				<Cpu
 					size={18}
-					class="inline-icon"
+					
 				/>
+                </span>
 
 				Currently learning
 				<strong>Svelte 5</strong>

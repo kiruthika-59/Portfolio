@@ -4,81 +4,45 @@
 	let menuOpen = $state(false);
 	let activeSection = $state('home');
 
-	const navItems = [
-		'home',
-		'about',
-		'skills',
-		'projects',
-		'blog',
-		'achievements',
-		'contact'
-	];
+	const navItems = ['home', 'about', 'skills', 'projects', 'blog', 'achievements', 'contact'];
 
 	const closeMenu = () => {
 		menuOpen = false;
 	};
 
 	$effect(() => {
-	const sections =
-		document.querySelectorAll(
-			'section[id]'
-		);
+		const sections = document.querySelectorAll('section[id]');
 
-	const handleScroll =
-		() => {
-			const scrollPosition =
-				window.scrollY + 120;
+		const handleScroll = () => {
+			const scrollPosition = window.scrollY + 120;
 
-			sections.forEach(
-				(section) => {
-					const htmlSection =
-						section as HTMLElement;
+			sections.forEach((section) => {
+				const htmlSection = section as HTMLElement;
 
-					const top =
-						htmlSection.offsetTop;
+				const top = htmlSection.offsetTop;
 
-					const height =
-						htmlSection.offsetHeight;
+				const height = htmlSection.offsetHeight;
 
-					if (
-						scrollPosition >=
-							top &&
-						scrollPosition <
-							top + height
-					) {
-						activeSection =
-							htmlSection.id;
-					}
+				if (scrollPosition >= top && scrollPosition < top + height) {
+					activeSection = htmlSection.id;
 				}
-			);
+			});
 		};
 
-	window.addEventListener(
-		'scroll',
-		handleScroll
-	);
-	handleScroll();
+		window.addEventListener('scroll', handleScroll);
+		handleScroll();
 
-	return () => {
-		window.removeEventListener(
-			'scroll',
-			handleScroll
-		);
-	};
-});
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	});
 </script>
 
 <nav class="navbar">
 	<div class="nav-container">
-		<a href="#home" class="logo">
-			Kiruthika
-		</a>
+		<a href="#home" class="logo"> Kiruthika </a>
 
-		<button
-			class="menu-btn"
-			onclick={() => (menuOpen = !menuOpen)}
-			aria-label="Toggle Menu"
-		>
+		<button class="menu-btn" onclick={() => (menuOpen = !menuOpen)} aria-label="Toggle Menu">
 			{#if menuOpen}
 				<X size={28} />
 			{:else}
@@ -88,11 +52,7 @@
 
 		<div class="links" class:show={menuOpen}>
 			{#each navItems as item}
-				<a
-					href={`#${item}`}
-					onclick={closeMenu}
-					class:active={activeSection === item}
-				>
+				<a href={`#${item}`} onclick={closeMenu} class:active={activeSection === item}>
 					{item.charAt(0).toUpperCase() + item.slice(1)}
 				</a>
 			{/each}
@@ -133,13 +93,13 @@
 		text-decoration: none;
 		letter-spacing: 0.5px;
 
-		background: linear-gradient(
-			to right,
-			#111827,
-			#4338ca
-		);
+		background: linear-gradient(to right, #111827, #4338ca);
 
+		background-clip: text;
 		-webkit-background-clip: text;
+
+		color: transparent;
+
 		-webkit-text-fill-color: transparent;
 
 		transition: transform 0.3s ease;
@@ -177,30 +137,29 @@
 		font-weight: 600;
 	}
 
-.links a::after {
-	content: '';
+	.links a::after {
+		content: '';
 
-	position: absolute;
-	left: 0;
-	bottom: -6px;
+		position: absolute;
+		left: 0;
+		bottom: -6px;
 
-	width: 100%;
-	height: 2px;
+		width: 100%;
+		height: 2px;
 
-	border-radius: 999px;
-	background: #4338ca;
+		border-radius: 999px;
+		background: #4338ca;
 
-	transform: scaleX(0);
-	transform-origin: left;
+		transform: scaleX(0);
+		transform-origin: left;
 
-	transition:
-		transform 0.3s ease;
-}
+		transition: transform 0.3s ease;
+	}
 
-.links a:hover::after,
-.links a.active::after {
-	transform: scaleX(1);
-}
+	.links a:hover::after,
+	.links a.active::after {
+		transform: scaleX(1);
+	}
 
 	.menu-btn {
 		display: none;
@@ -262,8 +221,7 @@
 
 			border: 1px solid rgba(229, 231, 235, 0.8);
 
-			box-shadow:
-				0 20px 40px rgba(15, 23, 42, 0.12);
+			box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
 
 			opacity: 0;
 			visibility: hidden;

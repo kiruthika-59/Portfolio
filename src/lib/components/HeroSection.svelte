@@ -130,9 +130,16 @@
 			#111827,
 			#4338ca
 		);
+ background-clip:
+        text;
 
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+    -webkit-background-clip:
+        text;
+
+    color: transparent;
+
+    -webkit-text-fill-color:
+        transparent;
 	}
 
 	h2 {
