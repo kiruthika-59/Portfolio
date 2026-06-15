@@ -81,13 +81,6 @@ Through this project, I explored:
 
 ---
 
-## Repository
-
-GitHub Repository:  
-:contentReference[oaicite:0]{index=0}
-
----
-
 ## Future Improvements
 
 - Add project images
@@ -97,6 +90,3 @@ GitHub Repository:
 - Integrate contact form backend
 
 ---
-
-### Developed by Kiruthika Sivakumar
-Built while learning **Svelte 5** and modern frontend development.
