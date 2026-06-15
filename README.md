@@ -61,6 +61,10 @@ src/
 │
 │── routes/
 │   └── +page.svelte
+│   └── +layout.svelte
+│   └── +page.server.ts
+│   └── api/postes
+│       └── +page.svelte
 │
 │── app.css
 ```
