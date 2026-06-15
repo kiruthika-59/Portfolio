@@ -2,20 +2,6 @@
 
 A modern and responsive personal portfolio website built using **Svelte 5** and **TypeScript** to showcase my profile, skills, projects, achievements, and learning journey.
 
-## Overview
-
-This project was developed as part of my learning journey in **Svelte 5**, focusing on:
-
-- Component-based architecture
-- Responsive UI design
-- Reusable components
-- State handling using Svelte runes
-- Smooth navigation and interactive UI
-
-The application is fully responsive and optimized for desktop, tablet, and mobile devices.
-
----
-
 ## Features
 
 - Responsive Navbar with active section highlight
@@ -38,7 +24,6 @@ The application is fully responsive and optimized for desktop, tablet, and mobil
 | Frontend | Svelte 5, TypeScript |
 | Styling | HTML5, CSS3 |
 | Icons | Lucide Svelte |
-| Version Control | Git & GitHub |
 
 ---
 
@@ -59,16 +44,14 @@ src/
 │   │   ├── FloatingButton.svelte
 │   │   └── Footer.svelte
 │
-│── routes/
-│   └── +page.svelte
-│   └── +layout.svelte
-│   └── +page.server.ts
-│   └── api/postes
-│       └── +page.svelte
-│
-│── app.css
-```
+└── routes/
+    ├── +page.svelte
+    ├── +layout.svelte
+    ├── +page.server.ts
+    └── api/postes
+        └── +page.svelte
 
+```
 ---
 
 ## Screenshots
@@ -86,20 +69,6 @@ src/
 ### Responsive Design
 
 <img width="1341" height="901" alt="Mobile-View" src="https://github.com/user-attachments/assets/c11c73ad-9ebd-4437-be8c-b199f9e49751" />
-
----
-
-## Key Learnings
-
-Through this project, I explored:
-
-- Svelte 5 component structure
-- Props and reusable UI components
-- Responsive web design
-- Conditional rendering
-- Smooth scrolling navigation
-- State management using runes (`$state`, `$effect`)
-- Mobile-first UI improvements
 
 ---
 
