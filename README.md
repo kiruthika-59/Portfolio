@@ -71,6 +71,24 @@ src/
 
 ---
 
+## Screenshots
+
+### Home section 
+
+<img width="1894" height="1007" alt="Home" src="https://github.com/user-attachments/assets/9a252a0e-eb32-40cc-9ac3-9b9a2eb58113" />
+
+### About section
+
+<img width="1876" height="1005" alt="About" src="https://github.com/user-attachments/assets/cd8e9eda-5a67-487e-8489-8933669f32eb" />
+
+<img width="1836" height="954" alt="Education" src="https://github.com/user-attachments/assets/fb7c520f-00e8-48df-9fb0-0c5a292ca330" />
+
+### Responsive Design
+
+<img width="1341" height="901" alt="Mobile-View" src="https://github.com/user-attachments/assets/c11c73ad-9ebd-4437-be8c-b199f9e49751" />
+
+---
+
 ## Key Learnings
 
 Through this project, I explored:
@@ -94,3 +112,5 @@ Through this project, I explored:
 - Integrate contact form backend
 
 ---
+
+
